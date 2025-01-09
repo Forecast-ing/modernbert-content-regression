@@ -19,15 +19,17 @@ This type of task if difficult, we can remember the quote
 
 We are also excluding other relevant factors such as the time of day the email is sent, the day of the week, the recipient, etc in this experiment.
 
+Links for project:
+- Model - [ModernBERT-Engagement-Content-Regression](https://huggingface.co/Forecast-ing/modernBERT-content-regression)
+- Training notebook - [Training Notebook](https://github.com/Forecast-ing/modernbert-content-regression/blob/main/model_training.ipynb)
+- Demo - [Demo Space](https://huggingface.co/spaces/Forecast-ing/modernbert-content-regression)
+
 This work is indebted to the work of many community members and blog posts.
 - [ModernBERT Announcement](https://huggingface.co/blog/modernbert)
 - [Fine-tune classifier with ModernBERT in 2025](https://www.philschmid.de/fine-tune-modern-bert-in-2025)
 - [How to set up Trainer for a regression](https://discuss.huggingface.co/t/how-to-set-up-trainer-for-a-regression/12994)
+- Additional thanks to the creators of ModernBERT!
 
-
-Our model - [ModernBERT-Engagement-Content-Regression](https://huggingface.co/Forecast-ing/modernBERT-content-regression)
-Our training notebook - [Training Notebook](https://github.com/Forecast-ing/modernbert-content-regression/blob/main/model_training.ipynb)
-Our demo - [Demo Space](https://huggingface.co/spaces/Forecast-ing/modernbert-content-regression)
 
 ### Our dataset
 We will be using a dataset of 548 emails where we have the text of the email `text` and the CTR we are trying to predict `labels`.
