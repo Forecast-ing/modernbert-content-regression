@@ -1,23 +1,16 @@
----
-title: ModernBERT Engagement Content Regression
-sdk: gradio
-sdk_version: "5.11.0"
-app_file: app.py
-pinned: true
----
 
 # ModernBERT Engagement Content Regression
 ### What is this?
 
-This is an exploration of using modernBERT for the text regression task of predicting engagement metrics for text content. In this case, we are predicting the clickthrough rate (CTR) of email text content.
+This explores using modernBERT for the text regression task of predicting engagement metrics for text content. In this case, we predict the clickthrough rate (CTR) of email text content.
 
-We will be exploring hyperparameter tuning of modernBert; and how to use it for regression, as well as comparing the results to a benchmark model.
+We will explore modernBert's hyperparameter tuning and how to use it for regression. We will also compare the results to a benchmark model.
 
-This type of task if difficult, we can remember the quote
-> “Half my advertising is wasted; the trouble is, I don't know which half”
+This type of task is complex; we can remember the quote.
+> Half my advertising is wasted; the trouble is, I don't know which half
 > -John Wanamaker
 
-We are also excluding other relevant factors such as the time of day the email is sent, the day of the week, the recipient, etc in this experiment.
+In this experiment, we exclude other relevant factors, such as the time the email is sent, the day of the week, the recipient, etc.
 
 Links for project:
 - Model - [ModernBERT-Engagement-Content-Regression](https://huggingface.co/Forecast-ing/modernBERT-content-regression)
@@ -32,13 +25,11 @@ This work is indebted to the work of many community members and blog posts.
 
 
 ### Our dataset
-We will be using a dataset of 548 emails where we have the text of the email `text` and the CTR we are trying to predict `labels`.
+We will be using a dataset of 548 emails where we have the text of the email text and the CTR we are trying to predict labels.
 
-We look forward in the improvements of ModernBERT to fine-tune models specifically for each potential users email dataset. The variability of email data, as well as the small size of the dataset pose an interesting regression challenge.
-
+We look forward to ModernBERT's improvements, allowing us to fine-tune models for each potential user’s email dataset. The variability of email data and its small size pose interesting regression challenges.
 ### Benchmarking
-We will start by using the Catboost library as a simple benchmark for text regression. For both the benchmark and the ModernBert run, we are using 'rmse' as the metric.
-We recieve the following results:
+We will start by using the Catboost library as a simple benchmark for text regression. For both the benchmark and the ModernBert run, we are using 'rmse' as the metric. We receive the following results:
 | Metric | Value            |
 |--------|------------------|
 | MSE    | 2.552100633998035 |
@@ -75,11 +66,8 @@ After running hyperparameter tuning for ModernBERT, we get the following results
 | SMAPE  | 56.61447048187256 |
 
 We see improvements in all metrics except for SMAPE. We believe that ModernBERT would scale even better with a larger dataset; as 500 example is very low for fine-tuning and are thus happy with the performance of this evaluation.
-
 ### Who are we?
-At [Forecast.ing](https://forecast.ing) we are building a platform to help users create more enriching content by automatically researching trends and generating campaign ideas with AgenticAI. 
-We generate the content, and then create fine-tuned scores of how likely we think that content will succeed.
+At [Forecast.ing](https://forecast.ing) we are building a platform to help users create more enriching content by automatically researching trends and generating campaign ideas with AgenticAI. We generate the content, and then create fine-tuned scores of how likely we think that content will succeed.
 
 ## Conclusion
-We see that ModernBERT is a powerful model for text regression. We believe that with a larger dataset, we would see even better results. We are excited to see the future of ModernBERT and how it will be used for text regression.
-If interested, I can be contacted at robin@forecast.ing
+We see that ModernBERT is a powerful model for text regression. We believe that with a larger dataset, we would see even better results. We are excited to see the future of ModernBERT and how it will be used for text regression. If interested, I can be contacted atrobin@forecast.ing
