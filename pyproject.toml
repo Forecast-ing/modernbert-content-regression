@@ -9,6 +9,7 @@ dependencies = [
     "catboost>=1.2.7",
     "datasets>=3.2.0",
     "evaluate>=0.4.3",
+    "gradio>=5.11.0",
     "hf-transfer>=0.1.8",
     "optuna>=4.1.0",
     "python-dotenv>=1.0.1",

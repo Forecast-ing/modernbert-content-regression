@@ -2,6 +2,7 @@
 .ruff_cache
 catboost_info/
 modernBERT-content-regression/
+.gradio
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

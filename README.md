@@ -18,6 +18,9 @@ This work is indebted to the work of many community members and blog posts.
 - [How to set up Trainer for a regression](https://discuss.huggingface.co/t/how-to-set-up-trainer-for-a-regression/12994)
 
 
+Our model - [ModernBERT-Engagement-Content-Regression](https://huggingface.co/Forecast-ing/modernBERT-content-regression)
+Our training notebook - [Training Notebook](https://github.com/Forecast-ing/modernbert-content-regression/blob/main/model_training.ipynb)
+
 ### Our dataset
 We will be using a dataset of 548 emails where we have the text of the email `text` and the CTR we are trying to predict `labels`.
 
