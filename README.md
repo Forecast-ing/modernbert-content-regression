@@ -70,4 +70,4 @@ We see improvements in all metrics except for SMAPE. We believe that ModernBERT 
 At [Forecast.ing](https://forecast.ing) we are building a platform to help users create more enriching content by automatically researching trends and generating campaign ideas with AgenticAI. We generate the content, and then create fine-tuned scores of how likely we think that content will succeed.
 
 ## Conclusion
-We see that ModernBERT is a powerful model for text regression. We believe that with a larger dataset, we would see even better results. We are excited to see the future of ModernBERT and how it will be used for text regression. If interested, I can be contacted atrobin@forecast.ing
+We see that ModernBERT is a powerful model for text regression. We believe that with a larger dataset, we would see even better results. We are excited to see the future of ModernBERT and how it will be used for text regression. If interested, I can be contacted at robin@forecast.ing
