@@ -1,0 +1,27 @@
+[project]
+name = "modernbert-content-regression"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.2.1",
+    "catboost>=1.2.7",
+    "datasets>=3.2.0",
+    "evaluate>=0.4.3",
+    "hf-transfer>=0.1.8",
+    "optuna>=4.1.0",
+    "python-dotenv>=1.0.1",
+    "scikit-learn>=1.6.0",
+    "tensorboardx>=2.6.2.2",
+    "transformers",
+]
+
+[tool.uv.sources]
+tinytroupe = { git = "https://github.com/microsoft/TinyTroupe.git" }
+transformers = { git = "https://github.com/huggingface/transformers.git", rev = "6e0515e99c39444caae39472ee1b2fd76ece32f1" }
+
+[dependency-groups]
+dev = [
+    "ruff>=0.8.4",
+]
